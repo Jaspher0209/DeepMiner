@@ -1,10 +1,15 @@
 #include <iostream>
-#include "welt.h"
 
-using namespace std;
+#include "game.h"
 
 int main()
 {
-    Wo
+    //create new Game instance
+    Game* newGame = new Game();
+
+    //printing
+    newGame->printWorld_xy();
+    newGame->printPlayerPos();
+
     return 0;
 }

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1743192295 source:c:\users\jaspher\onedrive\desktop\deepminer\game.cpp
+	"game.h"
+	<iostream>
+
+1743189895 source:c:\users\jaspher\onedrive\desktop\deepminer\world.cpp
+	"welt.h"
+
+1743189875 c:\users\jaspher\onedrive\desktop\deepminer\welt.h
+	<iostream>
+
+1743195865 source:c:\users\jaspher\onedrive\desktop\deepminer\main.cpp
+	<iostream>
+	"game.h"
+
+1743195934 c:\users\jaspher\onedrive\desktop\deepminer\game.h
+	<iostream>
+
+1743191891 c:\users\jaspher\onedrive\desktop\deepminer\game.cpp
+
