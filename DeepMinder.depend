@@ -18,3 +18,22 @@
 
 1743191891 c:\users\jaspher\onedrive\desktop\deepminer\game.cpp
 
+1745082692 source:g:\fhtw\bachelor_informatik\1_ss\objektorientiert\aufgaben\deepminer\game.cpp
+	"game.h"
+	"robot.h"
+	<iostream>
+	<string>
+
+1745083106 g:\fhtw\bachelor_informatik\1_ss\objektorientiert\aufgaben\deepminer\game.h
+	<iostream>
+	<array>
+	<cstdlib>
+	<ctime>
+
+1745081850 source:g:\fhtw\bachelor_informatik\1_ss\objektorientiert\aufgaben\deepminer\main.cpp
+	<iostream>
+	"game.h"
+	"robot.h"
+
+1745081616 g:\fhtw\bachelor_informatik\1_ss\objektorientiert\aufgaben\deepminer\robot.h
+

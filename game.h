@@ -2,54 +2,44 @@
 #define GAME_H
 
 #include <iostream>
-using namespace std;
+#include <array>
+#include <cstdlib>
+#include <ctime>
 
+#define ZEILE 5
+#define SPALTE 9
 
 //Game Class
 class Game{
 private:
-    int x;
-    int y;
-    int z;
-
+    std::array<std::array<int, SPALTE>, ZEILE> ebene;
 public:
     //constructor
     Game(){
-        this-> x = 5;
-        this-> y = 5;
-        this-> z = 9;
+        srand(time(0));  // Nur einmal pro Programmstart
 
-        cout << "\t== Welcome to DeepMiner! ==\n" << endl;
+        for(int i=0; i < SPALTE; i++){
+            for(int j=0; j < ZEILE; j++){
+                ebene[i][j] = rand() % 10;  // Höhen von 0 bis 9
+            }
+        }
+        std::cout << "\t== Welcome to DeepMiner! ==\n" << std::endl;
     }
 
-    //print world
-    void printWorld_xy();
-    void printWorld_yz();
-    void printPlayerPos();
-};
-
-//Player Class
-class Player{
-private:
-    int x;
-    int y;
-public:
-    Player(int x, int y){
-        this->x = x;
-        this->y = y;
+    ~Game(){
+        std::cout << "Game Closed" << std::endl;
     }
 
-    //to-do..
-    //void input();
+    //methods
+    void showWorld(int x, int y, int botposX, int botposY);
+    void removeBlock(int botposX, int botposY);
+    void getEbeneVal(int x, int y);
 
-    //getter
-    int get_postionX(){
-        return this->x;
+    //array getter
+    const std::array<std::array<int, SPALTE>, ZEILE>& getEbene() const {
+        return ebene;
     }
 
-    int get_postionY(){
-        return this->y;
-    }
 };
 
 #endif // GAME_H
